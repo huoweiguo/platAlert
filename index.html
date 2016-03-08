@@ -1,0 +1,381 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>  
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">  
+<title>网贷平台风险预警系统</title>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="header mb15">
+		<div class="header-txt">网贷平台风险预警系统</div>
+	</div>
+
+	<div class="warp clearfix">
+		<div class="tytool-left fleft">
+			<div class="yqgl mb15">
+				<h3 class="title-h3 mb15">舆情概览</h3>
+				<div class="yqgl-data clearfix">
+					<span>
+						<b>74</b>个
+						<i>预警平台</i>
+					</span>
+					<span>
+						<b>81</b>个
+						<i>舆情预警</i>
+					</span>	
+					<span>
+						<b>57</b>个
+						<i>投资人预警</i>
+					</span>
+					<span class="bdrn">
+						<b>62</b>个
+						<i>成交量预警</i>
+					</span>
+				</div>
+			</div>
+
+			<div class="yjMap mb15" id="main"></div>
+			
+			<div class="yqqs mb15" id="yqqs"></div>
+		</div>
+		
+		<div class="tytool-right fright">
+			<div class="realTime">
+				<h3 class="title-h3 mb15">实时舆情</h3>
+				<div class="realContainer mb15">
+					<div class="realTable" id="com-list"></div>
+				</div>
+				<div class="platform mb15">
+					<div class="plat-nav clearfix">
+						<span>平台名称</span>
+						<span>实时舆情</span>
+						<span>增加</span>
+						<span>增加率</span>
+					</div>
+					<ul>
+						<li><span>拍拍贷</span><span>-24.36</span><em>12.44</em><i>-0.338<!-- 04347826087 --></i></li>
+						<li><span>信融财富</span><span>-23.07</span><em>11.78</em><i>-0.338<!-- 020086 --></i></li>
+						<li><span>点融网</span><span>-11.5</span><em>5.91</em><i>-0.339<!-- 46008 --></i></li>
+						<li><span>融金所</span><span>-42.45</span><em>-42.45</em><i>-</i></li>
+						<li><span>恒融财富</span><span>-13.3</span><em>6.81</em><i>-0.338<!-- 637494 --></i></li>
+						<li><span>礼德财富</span><span>-56.26</span><em>-56.26</em><i>-</i></li>
+						<li><span>网利宝</span><span>-11.7</span><em>5.99</em><i>-0.338<!-- 609384 --></i></li>
+						<li><span>天玑汇富</span><span>-56.26</span><em>-56.26</em><i>-</i></li>
+						<li><span>和诚德在线</span><span>-56.61</span><em>-39.27</em><i>2.264<!-- 705882 --></i></li>
+						<li><span>e路同心</span><span>-35.12</span><em>-35.12</em><i>-</i></li>
+
+					</ul>
+					<div class="plat-more">
+						<a href="platfrom.html">查看更多 &raquo;</a>
+					</div>
+				</div>
+				<div class="savePing">
+					<div class="pingfen" id="tabs">
+						<div class="pingfen-inner clearfix">
+							<a href="javascript:vodi(0);" class="active">安全评分</a>
+							<a href="javascript:vodi(0);">净流出占比</a>
+							<a href="javascript:vodi(0);">成交量</a>
+						</div>
+					</div>
+					<div class="ping-ul" id="tab_list">
+						<div class="ping-div active">
+							<ul>
+								<li>
+									<span>投哪网</span>
+									<span class="snum">52.04</span>
+									<span class="spm"><em class="up"></em>0</span>
+								</li>
+
+								<li>
+									<span>拍拍贷</span>
+									<span class="snum">51.13</span>
+									<span class="spm"><em class="up"></em>0</span>
+								</li>
+
+								<li>
+									<span>你我贷</span>
+									<span class="snum">45.47</span>
+									<span class="spm"><em class="up"></em>0</span>
+								</li>
+
+								<li>
+									<span>口贷网</span>
+									<span class="snum">44.95</span>
+									<span class="spm"><em class="down"></em>1</span>
+								</li>
+
+								<li>
+									<span>合拍在线</span>
+									<span class="snum">44.37</span>
+									<span class="spm"><em class="up"></em>2</span>
+								</li>
+
+								<li>
+									<span>诺诺镑客</span>
+									<span class="snum">44.31</span>
+									<span class="spm"><em class="down"></em>-2</span>
+								</li>
+
+								<li>
+									<span>信融财富</span>
+									<span class="snum">43.55</span>
+									<span class="spm"><em class="up"></em>0</span>
+								</li>
+
+								<li>
+									<span>微贷网</span>
+									<span class="snum">42.89</span>
+									<span class="spm"><em class="up"></em>0</span>
+								</li>
+
+								<li>
+									<span>温州贷</span>
+									<span class="snum">42.66</span>
+									<span class="spm"><em class="up"></em>3</span>
+								</li>
+
+								<li>
+									<span>翼龙贷</span>
+									<span class="snum">41.76</span>
+									<span class="spm"><em class="down"></em>-1</span>
+								</li>
+
+								<li>
+									<span>人人聚财</span>
+									<span class="snum">38.8</span>
+									<span class="spm"><em class="down"></em>-1</span>
+								</li>
+
+								<li>
+									<span>团贷网</span>
+									<span class="snum">38.79</span>
+									<span class="spm"><em class="down"></em>-1</span>
+								</li>
+
+								<li>
+									<span>晋商贷</span>
+									<span class="snum">36.45</span>
+									<span class="spm"><em class="up"></em>0</span>
+								</li>
+
+								<li>
+									<span>E速贷</span>
+									<span class="snum">34.2</span>
+									<span class="spm"><em class="up"></em>1</span>
+								</li>
+
+								<li>
+									<span>365易贷</span>
+									<span class="snum">33.06</span>
+									<span class="spm"><em class="down"></em>-1</span>
+								</li>
+							</ul>
+							<div class="plat-more">
+								<a href="platfrom.html">查看更多 &raquo;</a>
+							</div>
+						</div>
+						
+						<div class="ping-div">
+							<ul>
+								<li>
+									<span>晋商贷</span>
+									<span class="snum">0.0054</span>
+									<span class="spm"><em class="up"></em>0</span>
+								</li>
+
+								<li>
+									<span>拍拍贷</span>
+									<span class="snum">0.0481</span>
+									<span class="spm"><em class="up"></em>0</span>
+								</li>
+
+								<li>
+									<span>温州贷</span>
+									<span class="snum">-0.019</span>
+									<span class="spm"><em class="up"></em>0</span>
+								</li>
+
+								<li>
+									<span>365易贷</span>
+									<span class="snum">0.0178</span>
+									<span class="spm"><em class="up"></em>0</span>
+								</li>
+
+								<li>
+									<span>口贷网</span>
+									<span class="snum">0.0218</span>
+									<span class="spm"><em class="down"></em>-1</span>
+								</li>
+
+								<li>
+									<span>你我贷</span>
+									<span class="snum">0.0575</span>
+									<span class="spm"><em class="down"></em>-1</span>
+								</li>
+
+								<li>
+									<span>团贷网</span>
+									<span class="snum">0.0095</span>
+									<span class="spm"><em class="up"></em>0</span>
+								</li>
+
+								<li>
+									<span>诺诺镑客</span>
+									<span class="snum">0.0369</span>
+									<span class="spm"><em class="up"></em>2</span>
+								</li>
+
+								<li>
+									<span>投哪网</span>
+									<span class="snum">-0.0561</span>
+									<span class="spm"><em class="up"></em>1</span>
+								</li>
+
+								<li>
+									<span>微贷网</span>
+									<span class="snum">0.026</span>
+									<span class="spm"><em class="down"></em>-2</span>
+								</li>
+
+								<li>
+									<span>E速贷</span>
+									<span class="snum">0.0235</span>
+									<span class="spm"><em class="up"></em>2</span>
+								</li>
+
+								<li>
+									<span>人人聚财</span>
+									<span class="snum">0.011</span>
+									<span class="spm"><em class="up"></em>1</span>
+								</li>
+
+								<li>
+									<span>信融财富</span>
+									<span class="snum">0.0731</span>
+									<span class="spm"><em class="up"></em>0</span>
+								</li>
+
+								<li>
+									<span>翼龙贷</span>
+									<span class="snum">0.0287</span>
+									<span class="spm"><em class="up"></em>1</span>
+								</li>
+
+								<li>
+									<span>合拍在线</span>
+									<span class="snum">-0.018</span>
+									<span class="spm"><em class="up"></em>0</span>
+								</li>
+							</ul>
+							<div class="plat-more">
+								<a href="platfrom.html">查看更多 &raquo;</a>
+							</div>
+						</div>	
+
+						<div class="ping-div">
+							<ul>
+								<li>
+									<span>投哪网</span>
+									<span class="snum">0.1211</span>
+									<span class="spm"><em class="up"></em>4</span>
+								</li>
+
+								<li>
+									<span>拍拍贷</span>
+									<span class="snum">0.3203</span>
+									<span class="spm"><em class="up"></em>0</span>
+								</li>
+
+								<li>
+									<span>你我贷</span>
+									<span class="snum">-0.0307</span>
+									<span class="spm"><em class="down"></em>-4</span>
+								</li>
+
+								<li>
+									<span>口贷网</span>
+									<span class="snum">0.0958</span>
+									<span class="spm"><em class="down"></em>-2</span>
+								</li>
+
+								<li>
+									<span>合拍在线</span>
+									<span class="snum">-0.4495</span>
+									<span class="spm"><em class="up"></em>0</span>
+								</li>
+
+								<li>
+									<span>诺诺镑客</span>
+									<span class="snum">0.0916</span>
+									<span class="spm"><em class="up"></em>0</span>
+								</li>
+
+								<li>
+									<span>信融财富</span>
+									<span class="snum">-0.2794</span>
+									<span class="spm"><em class="up"></em>0</span>
+								</li>
+
+								<li>
+									<span>微贷网</span>
+									<span class="snum">0.2643</span>
+									<span class="spm"><em class="up"></em>7</span>
+								</li>
+
+								<li>
+									<span>温州贷</span>
+									<span class="snum">0.0489</span>
+									<span class="spm"><em class="down"></em>-6</span>
+								</li>
+
+								<li>
+									<span>翼龙贷</span>
+									<span class="snum">-0.3767</span>
+									<span class="spm"><em class="up"></em>0</span>
+								</li>
+
+								<li>
+									<span>人人聚财</span>
+									<span class="snum">-0.182</span>
+									<span class="spm"><em class="up"></em>0</span>
+								</li>
+
+								<li>
+									<span>团贷网</span>
+									<span class="snum">0.1181</span>
+									<span class="spm"><em class="up"></em>1</span>
+								</li>
+
+								<li>
+									<span>晋商贷</span>
+									<span class="snum">0.3867</span>
+									<span class="spm"><em class="up"></em>0</span>
+								</li>
+
+								<li>
+									<span>E速贷</span>
+									<span class="snum">-0.0919</span>
+									<span class="spm"><em class="up"></em>0</span>
+								</li>
+
+								<li>
+									<span>365易贷</span>
+									<span class="snum">0.2487</span>
+									<span class="spm"><em class="up"></em>0</span>
+								</li>
+							</ul>
+							<div class="plat-more">
+								<a href="platfrom.html">查看更多 &raquo;</a>
+							</div>
+						</div>		
+					</div>
+				</div>
+			</div>	
+		</div>
+	</div>
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/echarts-all.js"></script>
+	<script src="js/map.js"></script>
+	<script src="js/common.js"></script>
+</body>
+</html>

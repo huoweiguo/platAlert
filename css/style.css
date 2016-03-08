@@ -1,0 +1,66 @@
+*{padding:0;margin:0;}
+a{text-decoration:none;}
+ul li{list-style:none;}
+body{background-color:#f5f5f5; font-family:verdena,"Microsoft Yahei";}
+.mb15{margin-bottom:15px;}
+.header{width:100%; height:40px; background-color:#313436;}
+.header-txt{width:1200px; height:40px; line-height:40px; margin:0 auto; font-size:14px; color:#f3f4f8;}
+.warp{width:1200px; margin:0 auto;}
+.clearfix:after{content:"";display:block; visibility:hidden; clear:both;}
+.fleft{float:left;}
+.fright{float:right;}
+.tytool-left{width:810px;}
+.tytool-right{width:360px;}
+.title-h3{font-size:20px; color:#313436; font-weight:normal;}
+.yqgl-data{height:105px; width:100%; background-color:#fff; line-height:145px; padding-top:35px;}
+.yqgl-data span{width:200px; height:75px; float:left; border-right:1px dashed #ccc; line-height:35px; text-align:center;}
+.yqgl-data span.bdrn{border-right:none;}
+.yqgl-data span{color:#4890ba; font-size:18px;}
+.yqgl-data span b{font-size:48px; font-weight:normal;}
+.yqgl-data span i{font-size:14px; color:#313436; font-style:normal; display:block;}
+.yjMap{width:100%; height:570px;}
+.yqqs{height:360px; background-color:#fff;}
+.realContainer{height:140px; background-color:#fff; width:100%; overflow:hidden;}
+.realTable{height:200px; margin:-30px 0 0 -30px; width:440px;}
+.platform{background-color:#fff; height:390px;}
+.savePing{background-color:#fff; height:520px; padding-top:20px;}
+.plat-nav{height:45px;}
+.plat-nav span{height:45px; line-height:45px; font-size:14px; display:block; float:left; text-align:center; width:82px;}
+.platform{padding:0 15px;}
+.platform li{overflow:hidden; height:29px; border-bottom:1px dashed #ccc; color:#666666; *margin-top:-4px;}
+.platform li span,.platform li em,.platform li i{width:72px; display:block; float:left; font-size:14px; padding-left:10px; line-height:30px; height:30px;}
+.platform li:hover{background-color:#f3f4f8; border-bottom:0; height:30px;}
+.platform li em,.platform li i{font-style:normal; color:#e83a32; padding-left:20px; width:62px;}
+.platform li i{width:82px; padding-left:0; text-align:center;}
+.green{color:#11b521 !important;}
+.plat-more{height:48px; text-align:center; line-height:48px;}
+.plat-more a{font-size:14px; color:#313436;}    
+.plat-more a:hover{color: #4890ba;}
+.pingfen{padding:0 15px; zoom:1;}
+.pingfen a{width:93px; height:30px; float:left; display:block; border-radius:5px; font-size:14px; text-align:center; line-height:30px; color:#313436; text-decoration:none; background-color:#f2f2f2; margin-right:20px;}
+.pingfen a.active{background:#4790b9; color:#fff;}
+.pingfen-inner{width:345px;}
+.ping-ul{padding:0 15px; margin-top:20px;}
+.ping-ul ul{border-top:1px dashed #ccc;}
+.ping-ul ul li{border-bottom:1px dashed #ccc; height:27px; overflow:hidden; zoom:1; *margin-top:-4px;}
+.ping-ul ul li span{width:95px; height:27px; float:left; line-height:29px; font-size:14px; display:block; padding-left:15px;}
+.ping-ul ul li span.snum{width:90px; padding-left:20px;}
+.ping-ul ul li span.spm{width:70px; padding-left:40px;}
+.ping-ul ul li span em{width:10px; height:13px; background-repeat:none; display:inline-block; margin-right:3px; *vertical-align:middle;}
+.ping-ul ul li span em.up{background-image:url(../images/up.png);}
+.ping-ul ul li span em.down{background-image:url(../images/down.png);}
+.ping-ul .ping-div{display:none;}
+.ping-ul .active{display:block;}
+
+.plat{width:1120px; margin:10px auto; padding:40px; background-color:#fff;}
+.nav-list{height:38px; background-color:#4790b9;}
+.nav-list span{height:38px; color:#fff; text-align:center; line-height:38px; display:block; float:left; width:186px; font-size:12px;}
+.h4-title{font-size:12px; color:#979797; margin-bottom:20px;}
+.yujing-plat{position:relative;}
+.yujing-plat ul{height:820px; overflow:hidden;}
+.yujing-plat ul li{border-bottom:1px dashed #ccc; height:40px; overflow:hidden; *margin-top:-4px;}
+.yujing-plat ul li span{height:40px; line-height:40px; width:186px; float:left; text-align:center; font-size:12px;}
+.yujing-plat ul li:hover{background-color:#f3f4f8;}
+.look{margin-top:15px; text-align:center;}
+.look-all{font-size:12px; color:#4790b9;}
+.plat-table{width:1118px; height:345px; position:absolute; z-index:10; left:0; top:70px; background-color:#fff; border:1px solid #ccc; display:none;}
