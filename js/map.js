@@ -111,68 +111,127 @@ myChart2.setOption({
 
 
 
-var myChart3 = echarts.init(document.getElementById("com-list"));
-myChart3.setOption({
-    backgroundColor: 'transparent',
-    title : {
-        text: '',
-        x:'left',
-        textStyle : {
-            color: '#000',
-            marginTop:"20"
-        }
-    },
-    tooltip : {
-        trigger: 'axis'
-    },
-    calculable : true,
-    grid : {
-       borderWidth : 0
-    },
-    xAxis : [
-        {
-            type : 'category',
-            //boundaryGap : false,
-            data : ['02-13','02-17','02-21','02-25','02-29','03-04','03-08'],
-            axisLine : {
-                lineStyle : {
-                    width:1
+function getPlatName(mk){
+    var myChart3 = echarts.init(document.getElementById("com-list"));
+    var json3 = {
+        backgroundColor: 'transparent',
+        title : {
+            text: '',
+            x:'50',
+            y:'35',
+            textStyle : {
+                fontSize: 12,
+                fontFamily:'Microsoft Yahei',
+                color: '#666'
+            }    
+        },
+        tooltip : {
+            trigger: 'axis'
+        },
+        calculable : true,
+        grid : {
+           borderWidth : 0
+        },
+        xAxis : [
+            {
+                type : 'category',
+                //boundaryGap : false,
+                data : ['02/23','02/24','02/25','02/26','02/27','02/28','02/29'],
+                axisLine : {
+                    lineStyle : {
+                        width:0
+                    }
+                },
+                splitLine : {
+                    lineStyle : {
+                        width : 0
+                    }
+                },
+                axisTick : {
+                    show : false
                 }
-            },
-            splitLine : {
-                lineStyle : {
-                    width : 0
-                }
-            },
-            axisTick : {
-                show : false
             }
-        }
-    ],
-    yAxis : [
-        {
-            type : 'value',
-            axisLine : {
-                lineStyle : {
-                    width:1
+        ],
+        yAxis : [
+            {
+                type : 'value',
+                axisLine : {
+                    lineStyle : {
+                        width:0
+                    }
+                },
+                splitLine : {
+                    lineStyle : {
+                        type : "dashed"
+                    }    
                 }
-            },
-            splitLine : {
-                lineStyle : {
-                    type : "dashed"
-                }    
             }
-        }
-    ],
-    series : [
+        ],
+        series : [
+            {
+                name:'实时舆情',
+                type:'line',
+                data:[]
+            }
+        ]                 
+    };
+
+    var arr3 = [
         {
-            name:'增加率',
-            type:'line',
-            stack: '总量',
-            data:[120, 132, 101, 134, 90, 230, 210]
+            name : '拍拍贷',
+            data : [-11.85,0,0,0,-54.5,-36.8,-24.36]
+        },
+
+        {
+            name : '信融财富',
+            data : [0,0,0,0,-51.9,-34.85,-23.07]
+        },
+
+        {
+            name : '点融网',
+            data : [-42,-56.03,-55.15,-37.55,-25.56,-17.41,-11.5]
+        },
+
+        {
+            name : '融金所',
+            data : [0,0,0,0,0,0,-42.45]
+        },
+
+        {
+            name : '恒融财富',
+            data : [0,0,0,-43.36,-29.53,-20.11,-13.3]
+        },
+
+        {
+            name : '礼德财富',
+            data : [0,0,0,0,0,0,-56.26]
+        },
+
+        {
+            name : '网利宝',
+            data : [0,0,-56.03,-38.15,-25.96,-17.69,-11.7]
+        },
+
+        {
+            name : '天玑汇富',
+            data : [0,0,0,0,0,0,-56.26]
+        },
+
+        {
+            name : '和诚德在线',
+            data : [0,0,-54.93,-37.4,-25.46,-17.34,-56.61]
+        },
+
+        {
+            name : 'e路同心',
+            data : [0,0,0,0,0,0,-35.12]
         }
-    ]                 
-});
+        
+    ];
+    json3.title.text = arr3[mk].name;
+    json3.series[0].data = arr3[mk].data;
+    myChart3.setOption(json3);
+}
 
 
 var myChart5 = echarts.init(document.getElementById("yqqs"));

@@ -40,3 +40,13 @@ $(".look-all").on("click",function(){
 		$(this).html("已经到底了!");
 	}
 });
+
+getPlatName(0);
+var $platUl = $(".platName li");
+for(var k=0; k<$platUl.size(); k++){
+	(function(mk){
+		$platUl.eq(k).on("mouseover",function(){
+			getPlatName(mk);
+		});
+	})(k);
+}
